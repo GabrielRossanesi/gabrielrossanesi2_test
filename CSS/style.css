@@ -1,0 +1,131 @@
+.final {
+	background: linear-gradient(-45deg, #000000, #1e0166, #05001a, #001427);
+    color:rgb(0, 5, 5);
+    margin-right: 20px;
+    font-weight: 125px;
+    border-radius: 24px 34px 30px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+h5{
+    margin-right: 20px;
+    font-weight: 500px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family:monospace;
+    justify-content: space-around;
+}
+h1{
+    margin-right: 20px;
+    font-weight: 500px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family:monospace;
+    justify-content: space-around;
+    color:black;
+}
+body {
+	background: linear-gradient(-45deg, #ebebeb, #e6defa, #cfecfa, #f1e0ff);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+#topo{
+	border: 1px transparent #fff;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: white;
+}
+a{
+    color:#fafafa
+    text-decoration: none;
+    transition: 0.3s;
+}
+a:hover{
+    opacity: 0.7;
+    text-decoration: none;
+}
+.logo{
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #23232e;
+    height: 8vh;
+    text-decoration: none;
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+    text-decoration: none;
+}
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+    text-decoration: none;
+}
+.mobile-menu{
+    cursor: pointer;
+    display:none;
+}
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+}
+@media (max-width: 999px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav-list{
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: #23232e;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+    }
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+    .mobile-menu{
+        display: block;
+    }
+    .nav-list.active {
+        transform: translateX(0);
+    }
+}
+p{
+    color: black;
+}
+.data{
+    justify-content: space-around;
+}
